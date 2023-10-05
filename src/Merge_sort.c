@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h> // for system("pause")
+#include <time.h>
 #define index_init 0
 #define index_last 7
 
@@ -14,11 +15,14 @@ int main(){
 
     printf("Original:\n");
     printarr(arr,sizeof(arr)/sizeof(arr[0]));
-
+    
+    float start = clock();
     MergeSort(arr,0,7); // MergeSort(array, first_index, last_index)
+    float end = clock();
 
     printf("\nSorted: (from index %d to %d)\n",index_init,index_last);
     printarr(arr,sizeof(arr)/sizeof(arr[0]));
+    printf("\nOperation Time: %.5fs", (end-start)/CLOCKS_PER_SEC);
 }
 
 void printarr(int *A, int length){ //, int length

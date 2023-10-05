@@ -18,7 +18,7 @@ int main(){
 
     printf("\nSorted:\n");
     printarr(arr,sizeof(arr)/sizeof(arr[0]));
-    printf("\nOperation Time: %.5f", (end-start)/CLOCKS_PER_SEC);
+    printf("\nOperation Time: %.5fs", (end-start)/CLOCKS_PER_SEC);
 }
 
 void printarr(int *A, int length){ //, int length
