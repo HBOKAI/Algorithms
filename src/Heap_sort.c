@@ -36,8 +36,8 @@ void HeapSort(int *A, int length){
         swap(A[0],A[i]);            // 注意 很常忘記改
         heap_size -=1;
         MaxHeapify(A,0,heap_size);  // 注意 很常忘記改
-        printf("\n");
-        printarr(A,length);  
+        // printf("\n");
+        // printarr(A,length);  
     }
 }
 
